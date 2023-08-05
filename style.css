@@ -1,0 +1,109 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_box{
+    background: url("https://raw.githubusercontent.com/apna-college/Delta/506f1e859d1240092d675478de399f94b5408c75/CSS/Mini%20Project/photo.jpg");
+    height:100vh;
+    background-size: cover;
+}
+
+.sidebar_menu{
+    height:100%;
+    width:20%;
+    background-color:rgba(255, 255, 255, 0.1);
+    position:fixed;
+    top:0px;
+    box-shadow:0px 0px 6px rgba(255, 255, 255, 0.2);
+    left:-300px;
+    transition: 0.5s ease-in-out;
+}
+
+.sidebar_menu a{
+    text-decoration: none;
+}
+
+.btn_one{
+    color:white;
+    font-size:30px;
+    position:fixed;
+    left:10px;
+    z-index:1;
+    transition:0.5s ease-in-out;
+}
+
+.logo a{
+    color:white;
+    font-size:19px;
+    font-weight:500;
+    position: absolute;
+    left:50px;
+}
+
+.btn_two{
+    
+    color:gray;
+    position:absolute;
+    right:10px;
+    top:4px;
+    font-size:20px;
+    opacity:0;
+    transition:0.2s ease-in-out;
+}
+
+.menu{
+    margin:40px 0px;;
+    position: absolute;
+    top:30px;
+    width:100%;
+}
+
+li i,a{
+    color:white;
+    line-height:40px;
+    padding:5px;
+}
+
+li i{
+    opacity: 0.5;
+}
+
+.social_media{
+    opacity:0.7;
+    position:absolute;
+    left:20%;
+    bottom:245px;
+    font-size: 20px;
+}
+
+#check{
+    display:none;
+}
+
+
+.btn_one:hover{
+    font-size:31px;
+}
+
+.btn_two:hover{
+    font-size:23px;
+}
+
+li:hover{
+    box-shadow:0px 0px 6px rgba(255, 255, 255, 0.2);
+}
+
+.social_media a:hover{
+    font-size:22px;
+    opacity:1;
+}
+
+#check:checked~.sidebar_menu{
+    left:0px;
+}
+
+#check:checked~.sidebar_menu .btn_two{
+    opacity:1;
+}
